@@ -8,47 +8,109 @@
 
     <link rel="stylesheet" href="bootstrap.min.css">
     <script src="bootstrap.bundle.min.js"></script>
+
+    <style>
+      main{
+        position: relative;
+        top: 0px;
+        padding-top: 50px;
+        font-family: sans-serif;
+      }
+      #founder-section{
+        width: 100%;
+        min-height: 200px;
+        padding: 5%;
+      }
+      .founder-img{
+        float: left;
+        height: 200px;
+        width: 200px;
+        margin-right: 20px;
+      }
+      #founder-section p{
+        margin-bottom: 0px;
+      }
+      #founder-p{
+        clear: none;
+      }
+      .board{
+        clear: left;
+      }
+      .theme-section{
+        margin: 0px;
+        padding: 5%;
+      }
+      .theme-section p{
+        margin-bottom: 0px;
+      }
+      footer{
+          width: 100%;
+          height: 100px;
+          position: relative;
+          bottom: 0px;
+          color: whitesmoke;
+          padding: 30px;
+        }
+        footer a{
+          text-decoration: none;
+        }
+        @media (max-width: 400px){
+          .small-a{
+            font-size: medium;
+          }
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Fixed navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
+          <div class="container-fluid">
+            <a class="navbar-brand small-a" href="/">GodsDelightSpring Foundation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/about.html">About</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li> -->
+              </ul>
+              <!-- <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form> -->
             </div>
-          </nav>
-          
+          </div>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <img src="./images/founder.jpg" alt="founder">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, accusamus officiis eum laborum placeat repudiandae necessitatibus asperiores sunt ipsa culpa maiores labore voluptate quis ullam! Expedita minima velit nam temporibus?</p>
+        <section id="founder-section" class="text-bg-secondary">
+            <img src="./images/founder.jpg" alt="founder" class="founder-img shadow p-1">
+            <p id="founder-p"><strong>EYINSAN EBIERE GILO</strong>.
+              Born on 22nd October, to the family of Augustine Temiatse in Warri North Local Government Areas of Delta State. Her early childhood education was in the Baptist mission , Gusau,
+              She also attended Dangaladima Waziri Primary School Gusau, then sokoto State now Zamfara State. 
+              She had her  secondary school in Iwere college, Koko and proceeded to Dore- Numa college, Warri to complete her secondary education. She also attended Social Development Institute ( Shasha ) Iperu in Ogun State affiliated to Ogun State University. EYINSAN EBIERE GILO, moved to Lagos in 1994  and got a job with Marine and General Assurance company as a sales representative. she  also attended Lago's City Computer College in Ikeja, where she meet her husband of blessed memory, Mr Sunny Gilo in 1995. Still hungry for education, she wrote jamb, passed and got admission into the prestigious  University of Lagos, Akoka, Nigeria, where she studied Guidance and Counseling. She was posted to Oyo State and served in Oluwole local Government Secretariat. After her youth service she got a job at Skittles nursery and primary School Surulere, Lagos Nigeria.
+              In 2006, she got a job with Delta State government as an Education Officer. She has moved through the ranks and she is now a Chief inspector of Education. 
+              She was the first Administrator for Delta State Vocational Education center Ubuluku and now the Administrator for Delta State Vocational Education center Asaba, Delta State.
+               Mrs EYINSAN EBIERE GILO, is a social worker, a Chief Inspector of Education, youth development officer, A Quality Assurance Assessor ( QAA), and a Business Development Service Provider ( BDSP). 
+              She is blessed with 4 children.
+              </p>
         </section>
-        <section>
-            <img src="./images/board-members.jpg" alt="Board Members">
-            <p>Hephzibah Sisters</p>
-        </section>
-        <section>
+        <!-- <section>
+            <img src="./images/board-members.jpg" alt="Board Members" class="board" title="Hephzibah Sisters">
+            <title>Hephzibah Sisters</title>
+        </section> -->
+        <section class="text-bg-light theme-section">
             <!-- <h3>Invisible Woman, Invisible Problems</h3> -->
             <p>
                 The theme of this year is "Sustainable Solution for Widows Financial Independence '
@@ -86,5 +148,11 @@
         
         </section>
     </main>
+
+     <!-- FOOTER -->
+    <footer class=" bg-dark">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>&copy; 2022 Company, Org. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
 </body>
 </html>

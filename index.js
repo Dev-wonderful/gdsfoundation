@@ -12,9 +12,12 @@ const app = express()
 const port = 5503
 const path = require('path')
 
+const directory = path.join(__dirname)
+
+app.use(express.static(directory))
 app.get('/about', (req, res) => {
     
-  res.sendFile('about.html', {root: path.join(__dirname)})
+  res.sendFile('about.html', {root: directory})
 //   res.send()
 
 })

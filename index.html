@@ -186,7 +186,10 @@
           <div class="carousel-caption">
             <h1>Become a Volunteer.</h1>
             <p>Together we can make the world a better place for the widows.</p>
-            <p><a class="btn btn-lg btn-primary" href="/volunteers">Learn more</a></p>
+            <!-- <p><a class="btn btn-lg btn-primary" href="/volunteers"></a></p> -->
+            <p><button type="button" class="btn btn-lg btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Become a Volunteer Today
+            </button></p>
           </div>
         </div>
       </div>
@@ -231,7 +234,7 @@
 
         <h2 class="fw-normal">Founder</h2>
         <p>Mrs. Ebiere Eyisan Gilo</p>
-        <p><a class="btn btn-dark" href="/about">View details &raquo;</a></p>
+        <p><a class="btn btn-dark" href="/about.html">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
@@ -249,8 +252,11 @@
         <img src="./images/volunteers.jpg" alt="volunteers" class="img shadow p-2 bg-dark rounded">
 
         <h2 class="fw-normal">Volunteers</h2>
-        <p>Names Names Names</p>
-        <p><a class="btn btn-dark" href="/volunteers">Become a Volunteer Today &raquo;</a></p>
+        <p></p>
+        <!-- <p><a class="btn btn-dark" href="/volunteers">Become a Volunteer Today &raquo;</a></p> -->
+        <p><button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Become a Volunteer Today &raquo;
+        </button></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
@@ -322,6 +328,47 @@
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Sign Up</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h1 class="text-center display-5 text-secondary">Be a Volunteer Today</h1>
+            <section>
+
+                <form>
+                    <div class="mb-3">
+                      <label for="fullname" class="form-label">Full Name</label>
+                      <input type="text" class="form-control" aria-describedby="fullname">
+                    </div>
+    
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+    
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Register</button>
+                  </form>
+            </section>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- FOOTER -->

@@ -14,7 +14,6 @@
         position: relative;
         top: 0px;
         padding-top: 50px;
-        font-family: Arial, Helvetica, sans-serif;
       }
       #founder-section{
         width: 100%;
@@ -31,6 +30,11 @@
         margin-bottom: 0px;
         text-align: justify;
       }
+      @media (max-width: 500px){
+        #founder-section p{
+          text-align: left;
+        }
+      }
       #founder-p{
         clear: none;
       }
@@ -44,6 +48,7 @@
       .theme-section p{
         margin-bottom: 20px;
         text-align: justify;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       }
       footer{
           width: 100%;
@@ -60,6 +65,11 @@
           .small-a{
             font-size: medium;
           }
+        }
+        .green{
+          background-color: #81fcc3;
+          color: black;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
     </style>
 </head>
@@ -96,7 +106,7 @@
     </header>
 
     <main>
-        <section id="founder-section" class="text-bg-secondary">
+        <section id="founder-section" class=" green">
             <img src="./images/founder.jpg" alt="founder" class="founder-img shadow p-1">
             <p id="founder-p" class="lh-lg"><strong>EYINSAN EBIERE GILO</strong>.
               Born on 22nd October, to the family of Augustine Temiatse in Warri North Local Government Areas of Delta State. Her early childhood education was in the Baptist mission , Gusau,

@@ -129,8 +129,12 @@
           color: #0bcc72;
         }
         .margin{
-          margin-top: -20px;
+          margin-top: -10px;
           margin-bottom: 20px;
+        }
+        .margin-d{
+          margin-top: 0px;
+          margin-bottom: 0px;
         }
         .btn-green{
           background-color: #0bcc72;
@@ -214,7 +218,9 @@
           <div class="carousel-caption text-start">
             <h1>Welcome to GodsDelightSpring Foundation</h1>
             <p>Giving hope to Widows</p>
-            <p><a class="btn btn-lg btn-green" href="/donate">Donate today</a></p>
+            <p><button type="button" class="btn btn-lg btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+              Donate today
+            </button></p>
           </div>
         </div>
       </div>
@@ -228,8 +234,8 @@
             <h1>Become a Volunteer.</h1>
             <p>Together we can make the world a better place for the widows.</p>
             <!-- <p><a class="btn btn-lg btn-primary" href="/volunteers"></a></p> -->
-            <p><button type="button" class="btn btn-lg btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Become a Volunteer Today
+            <p><button type="button" class="btn btn-lg btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+              Join the team
             </button></p>
           </div>
         </div>
@@ -284,7 +290,9 @@
 
         <h2 class="fw-normal">Board Members</h2>
         <p>Hephzibah Sisters.</p>
-        <p><a class="btn btn-green" href="/donate">Join Us &raquo;</a></p>
+        <p><button type="button" class="btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+          Join us &raquo;
+        </button></p>
       </div><!-- /.col-lg-4 -->
 
       <div class="col-lg-4">
@@ -293,7 +301,7 @@
         <img src="./images/volunteers.jpg" alt="volunteers" class="img shadow p-2 bg-dark rounded">
 
         <h2 class="fw-normal">Volunteers</h2>
-        <p></p>
+        <p>Our team of Volunteers</p>
         <!-- <p><a class="btn btn-dark" href="/volunteers">Become a Volunteer Today &raquo;</a></p> -->
         <p><button type="button" class="btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
           Become a Volunteer Today &raquo;
@@ -370,7 +378,7 @@
 
   </div><!-- /.container -->
 
-  <!-- Modal -->
+  <!-- Modal For Volunteer -->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content green-text">
@@ -379,7 +387,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <h1 class="text-center display-5 text-secondary margin">Be a Volunteer Today</h1>
+            <h1 class="text-center display-5 text-secondary margin">Join The Team Today</h1>
             <section>
 
                 <form>
@@ -404,8 +412,52 @@
             </section>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
           <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+          <p>We look forward to seeing you</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal For Donation -->
+  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content green-text">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Help widowed mothers</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h1 class="text-center display-6 text-secondary margin-d">Donate</h1>
+            <section>
+
+                <form>
+                    <div class="mb-3">
+                      <label for="fullname" class="form-label">Full Name</label>
+                      <input type="text" class="form-control" aria-describedby="fullname">
+                    </div>
+    
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We would reach out to you through this e-mail</div>
+                    </div>
+    
+                    <!-- <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div> -->
+                    
+                    <button type="submit" class="btn btn-green">Submit</button>
+                  </form>
+            </section>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button> -->
+          <p>Thanks for your benevolence</p>
         </div>
       </div>
     </div>
@@ -414,8 +466,8 @@
 
   <!-- FOOTER -->
   <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2022 Company, Org. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <p class="float-end"><a href="#" class="green-text">Back to top</a></p>
+    <p>&copy; 2022 Company, Org. &middot; <a href="#" class="green-text">Privacy</a> &middot; <a href="#" class="green-text">Terms</a></p>
   </footer>
 </main>
 

@@ -1,34 +1,30 @@
-// const express = require('express')
-// const app = express();
-
-// app.get('/about', (req, res) => {
-//     res.send('hello');
-// })
-
-// app.listen(5503)
-
 const express = require('express')
 const app = express()
 const port = 5052
 const path = require('path')
 
 const directory = path.join(__dirname)
+const public = path.join(__dirname, 'public')
+const pages = path.join(__dirname, '/src/pages')
+const src = path.join(__dirname, 'src')
 
+app.use('/', express.static(public))
+app.use(express.static(pages))
+app.use(express.static(src))
 app.use(express.static(directory))
-app.get('/about', (req, res) => {
-    
-  res.sendFile('about.html', {root: directory})
-//   res.send()
 
+
+app.get('/', (req, res) => {
+  res.sendFile('index.html', {root: public})
+})
+app.get('/about', (req, res) => {
+  res.sendFile('about.html', {root: pages})
 })
 app.get('/gallery', (req, res) => {
-    
-  res.sendFile('gallery.html', {root: directory})
-//   res.send()
-
+  res.sendFile('gallery.html', {root: pages})
 })
 
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`App listening on port ${port}`)
 })

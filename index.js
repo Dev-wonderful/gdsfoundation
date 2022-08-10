@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 5052
+const port = process.env.PORT
 const path = require('path')
 
 const directory = path.join(__dirname)

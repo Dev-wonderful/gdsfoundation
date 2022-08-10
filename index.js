@@ -8,7 +8,7 @@ const public = path.join(__dirname, 'public')
 const pages = path.join(__dirname, '/src/pages')
 const src = path.join(__dirname, 'src')
 
-app.use('/', express.static(public))
+app.use(express.static(public))
 app.use(express.static(pages))
 app.use(express.static(src))
 app.use(express.static(directory))

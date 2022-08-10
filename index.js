@@ -15,7 +15,7 @@ app.use(express.static(directory))
 
 
 app.get('/', (req, res) => {
-  res.sendFile('index.html', {root: public})
+  res.sendFile('index.html', {root: directory})
 })
 app.get('/about', (req, res) => {
   res.sendFile('about.html', {root: pages})

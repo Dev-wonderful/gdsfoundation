@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = process.env.PORT
+const port = process.env.PORT | 5052
 const path = require('path')
 
 const directory = path.join(__dirname)
@@ -15,7 +15,7 @@ app.use(express.static(directory))
 
 
 app.get('/', (req, res) => {
-  res.sendFile('index.html', {root: public})
+  res.sendFile('zndex.html', {root: public})
 })
 app.get('/about', (req, res) => {
   res.sendFile('about.html', {root: pages})
